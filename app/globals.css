@@ -3,7 +3,17 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --color-primary: #8848e8;
+  --color-secondary: #f1d3ff;
+  --color-complimentary: #891b1e;
+
+  --bg-pattern: url("/auth-bg.jpg");
+}
+
 @theme inline {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -119,4 +129,15 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@utility pattern {
+  @apply bg-[url('/auth-bg.jpg')] bg-cover bg-no-repeat bg-center h-screen;
+}
+
+@utility flex-center {
+  @apply flex items-center justify-center;
+}
+@utility input-primary {
+  @apply bg-[#b486fa] text-white  placeholder:text-[#e5ddf1] focus-visible:outline-none focus-visible:ring-0 focus-visible:border-b-1 focus-visible:border-[#8848E8];
 }
