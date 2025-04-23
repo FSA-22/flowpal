@@ -9,6 +9,7 @@
   --color-complimentary: #891b1e;
 
   --bg-pattern: url("/auth-bg.jpg");
+  --bg-hero1:  url("/hero1.jpg");
 }
 
 @theme inline {
@@ -133,6 +134,10 @@
 
 @utility pattern {
   @apply bg-[url('/auth-bg.jpg')] bg-cover bg-no-repeat bg-center h-screen;
+}
+
+@utility hero1 {
+  @apply bg-[url('/hero1.jpg')] bg-cover bg-no-repeat bg-center h-screen;
 }
 
 @utility flex-center {
