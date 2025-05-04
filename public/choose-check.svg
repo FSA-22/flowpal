@@ -1,0 +1,12 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg fill="#bb48e8" width="64px" height="64px" viewBox="-3.12 -3.12 30.24 30.24" id="check-mark-circle" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color" stroke="#bb48e8" stroke-width="0.00024000000000000003">
+<g id="SVGRepo_bgCarrier" stroke-width="0">
+<rect x="-3.12" y="-3.12" width="30.24" height="30.24" rx="15.12" fill="#bb48e8" strokewidth="0"/>
+</g>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier">
+<circle id="primary" cx="12" cy="12" r="10" style="fill: #ffffff000000;"/>
+<path id="secondary" d="M11,15.5a1,1,0,0,1-.71-.29l-3-3a1,1,0,1,1,1.42-1.42L11,13.09l4.29-4.3a1,1,0,0,1,1.42,1.42l-5,5A1,1,0,0,1,11,15.5Z" style="fill: #ffffff;"/>
+</g>
+</svg>

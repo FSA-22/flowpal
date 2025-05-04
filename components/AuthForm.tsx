@@ -13,7 +13,7 @@ import {
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import CustomInput from "./CustomInput";
-import { authFormSchema } from "@/lib/utils";
+import { authFormSchema } from "@/types";
 
 const AuthForm = ({ type }: { type: string }) => {
   const formSchema = authFormSchema(type);
