@@ -95,7 +95,7 @@ export default function CustomFormSection() {
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="form-label">
-                        Total Expenses{' '}
+                        Total Expenses
                       </FormLabel>
                       <FormControl>
                         <Input {...field} />

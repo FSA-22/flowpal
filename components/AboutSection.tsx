@@ -44,7 +44,7 @@ const AboutSection = () => {
             <p className="text-base md:text-lg text-gray-700 font-semibold">
               Our mission is simple: empower business owners to take control of
               their finances with ease. From real-time profit tracking to
-              intelligent inventory and seamless invoicing—we've got it all
+              intelligent inventory and seamless invoicing—we have got it all
               covered.
             </p>
           </div>
@@ -53,14 +53,12 @@ const AboutSection = () => {
 
       <div className="w-full bg-[#e6a7ff9a] py-16 px-6 md:py-20 md:px-20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between gap-12 relative z-10">
-          {/* Left Text Content */}
           <div className="w-full md:w-1/2 flex flex-col gap-6 text-left">
             <p className="md:text-lg font-medium text-[#bb48e8]">
-              {' '}
               -- Why Choose Us
             </p>
             <h2 className="text-xl md:text-3xl font-bold text-gray-900 leading-snug">
-              Run Your Business Like a Boss, We've Got Your Finance.
+              Run Your Business Like a Boss, We have Got Your Finance.
             </h2>
 
             <p className="text-base md:text-lg text-gray-700">
