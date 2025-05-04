@@ -11,9 +11,11 @@ import { authFormSchema } from '@/lib/utils';
 import { Control } from 'react-hook-form';
 import { z } from 'zod';
 
+type FormValues = z.infer<ReturnType<typeof authFormSchema>>;
+
 interface CustomInput {
-  control: Control<z.infer<typeof formSchema>>;
-  name: keyof z.infer<typeof formSchema>;
+  control: Control<FormValues>;
+  name: keyof FormValues;
   label: string;
   placeholder: string;
 }
