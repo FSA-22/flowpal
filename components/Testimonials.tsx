@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Button } from './ui/button';
 import { testimonials } from '@/constants';
 import Image from 'next/image';
 
