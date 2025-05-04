@@ -1,9 +1,14 @@
-import React from 'react'
+import HeroSectionProfit from '@/components/HeroSectionProfit';
+import ProfitTracker from '@/components/ProfitTracker';
+import React from 'react';
 
-const Profit = () => {
+const ProfitPage = () => {
   return (
-    <div className='text-4xl'>Profit</div>
-  )
-}
+    <main className="w-full">
+      <HeroSectionProfit />
+      <ProfitTracker />
+    </main>
+  );
+};
 
-export default Profit
+export default ProfitPage;

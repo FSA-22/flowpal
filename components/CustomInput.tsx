@@ -4,12 +4,12 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { authFormSchema } from "@/lib/utils";
+} from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
+import { authFormSchema } from '@/lib/utils';
 
-import { Control } from "react-hook-form";
-import { z } from "zod";
+import { Control } from 'react-hook-form';
+import { z } from 'zod';
 
 interface CustomInput {
   control: Control<z.infer<typeof formSchema>>;
@@ -18,7 +18,7 @@ interface CustomInput {
   placeholder: string;
 }
 
-const formSchema = authFormSchema("register");
+const formSchema = authFormSchema('register');
 
 const CustomInput = ({ control, name, label, placeholder }: CustomInput) => {
   return (
@@ -33,7 +33,7 @@ const CustomInput = ({ control, name, label, placeholder }: CustomInput) => {
               <FormControl>
                 <Input
                   placeholder={placeholder}
-                  type={name === "password" ? "password" : "text"}
+                  type={name === 'password' ? 'password' : 'text'}
                   {...field}
                   className="bg-[#f1d3ff] text-[#891b1e] placeholder:text-[#f1d3ff] focus-visible:outline-none focus-visible:ring-0 focus-visible:border-b-1 focus-visible:border-[#8848E8]"
                 />

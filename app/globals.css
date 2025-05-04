@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -8,8 +8,8 @@
   --color-secondary: #f1d3ff;
   --color-complimentary: #891b1e;
 
-  --bg-pattern: url("/auth-bg.jpg");
-  --bg-hero1:  url("/hero1.jpg");
+  --bg-pattern: url('/auth-bg.jpg');
+  --bg-hero1: url('/hero1.jpg');
 }
 
 @theme inline {
@@ -145,4 +145,8 @@
 }
 @utility input-primary {
   @apply bg-[#b486fa] text-white  placeholder:text-[#e5ddf1] focus-visible:outline-none focus-visible:ring-0 focus-visible:border-b-1 focus-visible:border-[#8848E8];
+}
+
+@utility form-label {
+  @apply flex items-center justify-center text-center;
 }

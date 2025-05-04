@@ -1,5 +1,4 @@
-import { navLinks } from '@/constants';
-import { Mail, Phone, CircleCheck, Copyright } from 'lucide-react';
+import { Mail, Phone, Copyright } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 

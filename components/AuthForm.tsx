@@ -1,19 +1,16 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-import { Button } from "@/components/ui/button";
-import {
-  Form
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import Link from "next/link";
-import CustomInput from "./CustomInput";
-import { authFormSchema } from "@/types";
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
+import { Button } from '@/components/ui/button';
+import { Form } from '@/components/ui/form';
+import Link from 'next/link';
+import CustomInput from './CustomInput';
+import { authFormSchema } from '@/lib/utils';
 
 const AuthForm = ({ type }: { type: string }) => {
   const formSchema = authFormSchema(type);
@@ -23,9 +20,9 @@ const AuthForm = ({ type }: { type: string }) => {
 
     resolver: zodResolver(formSchema),
     defaultValues: {
-      businessName: "",
-      email: "",
-      password: "",
+      businessName: '',
+      email: '',
+      password: '',
     },
   });
 
@@ -46,16 +43,16 @@ const AuthForm = ({ type }: { type: string }) => {
             alt="flowpal-logo"
           />
           <p className="text-sm font-normal text-black/80 mt-2">
-            {type === "login"
-              ? "Enter account details and proceed to login"
-              : "Join thousands of online bisness owners who track their trades with Flowpal effortlessly"}
+            {type === 'login'
+              ? 'Enter account details and proceed to login'
+              : 'Join thousands of online bisness owners who track their trades with Flowpal effortlessly'}
           </p>
         </header>
         <div className="flex flex-col gap-2 w-full">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
               <div className="flex flex-col mt-4 gap-2 rounded-md w-full">
-                {type === "register" && (
+                {type === 'register' && (
                   <CustomInput
                     name="businessName"
                     control={form.control}
@@ -79,8 +76,9 @@ const AuthForm = ({ type }: { type: string }) => {
 
               <Button
                 type="submit"
-                className="w-full h-10 mt-4 bg-[#8848e8] hover:bg-[#8848e8ad] hover:text-white">
-                {type === "login" ? "Login" : "Create My Free Account"}
+                className="w-full h-10 mt-4 bg-[#8848e8] hover:bg-[#8848e8ad] hover:text-white"
+              >
+                {type === 'login' ? 'Login' : 'Create My Free Account'}
               </Button>
             </form>
           </Form>
@@ -91,7 +89,7 @@ const AuthForm = ({ type }: { type: string }) => {
         <p className="flex text-gray-600 gap-1">
           Already have an Account?
           <span className="text-[#8848e8] font-semibold">
-            {type === "login" ? (
+            {type === 'login' ? (
               <Link href="/register">Create an account </Link>
             ) : (
               <Link href="/login">Log in here</Link>
