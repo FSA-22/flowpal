@@ -27,7 +27,7 @@ const AboutSection = () => {
         </div>
 
         <div className="w-full md:w-1/2 flex flex-col gap-6">
-          <div className="flex flex-start ">
+          <div className="flex flex-start">
             <p className="px-4 py-4 font-semibold text-[#9700d3] bg-[#e6a7ff9a]">
               About Us
             </p>
@@ -63,7 +63,7 @@ const AboutSection = () => {
 
             <p className="text-base md:text-lg text-gray-700">
               We make financial management easy, so you can focus on growing
-              your business
+              your business.
             </p>
 
             <ul className="space-y-2">
