@@ -118,3 +118,100 @@ export const questions = [
       'You can reach out to our support team through the contact form on our website or via email. We are here to assist you with any issues you may encounter.',
   },
 ];
+
+export const transactions = [
+  { date: '11/03/25', type: 'Sales (Invoice 1024)', amount: '₦15,000', id: 1 },
+  { date: '11/03/25', type: 'Expenses (Supplies)', amount: '₦54,000', id: 2 },
+  { date: '10/03/25', type: 'Sales (POS Payment)', amount: '₦70,000', id: 3 },
+];
+
+export const stockSumary = [
+  {
+    id: '1',
+    path: '/vector-4.svg',
+    title: 'Total Products',
+    title2: 'Products',
+    counts: '125 Items',
+  },
+  {
+    id: '2',
+    path: '/vector-2.svg',
+    title: 'Last',
+    title2: 'Restoked',
+    counts: '3 Days Ago',
+  },
+  {
+    id: '3',
+    path: '/vector3.svg',
+    title: 'Low-Stock',
+    title2: 'Items',
+    counts: '15 Items',
+  },
+  {
+    id: '4',
+    path: '/vector-3.svg',
+    title: 'Best-Selling ',
+    title2: 'Items',
+    counts: 'EarBuds',
+  },
+];
+
+export const leastSoldMost = {
+  labels: ['May 1', 'May 2', 'May 3', 'May 4', 'May 5', 'May 6'],
+  datasets: [
+    {
+      label: 'Most Sold',
+      data: [, 40, 20, 80, 60, 80],
+      borderColor: 'purple',
+      borderWidth: 0.5,
+    },
+    {
+      label: 'Least Sold',
+      data: [, 20, 57, 20, 38, 29],
+      borderColor: '#f1d3ff',
+      borderWidth: 1,
+    },
+  ],
+};
+
+export const restockItems = [
+  {
+    product: 'T-Shirt A (Red)',
+    stockLevel: 15,
+    supplier: 'XYZ Textiles',
+    restockDate: '3 Days Left',
+  },
+  {
+    product: 'Wireless EarBuds',
+    stockLevel: 50,
+    supplier: 'AudioTech',
+    restockDate: '1 Week Ago',
+  },
+  {
+    product: 'Office Desk',
+    stockLevel: 0,
+    supplier: 'HomeOffice Co.',
+    restockDate: 'Urgent Restock',
+  },
+];
+
+export const expensesItems = [
+  {
+    service: 'Google Workspace',
+    cost: '20,000/mo',
+    nextPayment: 'April 10',
+    status: 'red',
+  },
+  {
+    service: 'Website Hosting',
+    cost: '50,000/yr',
+    nextPayment: 'April 15',
+    status: 'yellow',
+  },
+  {
+    service: 'Logistic Company',
+    cost: '15,000/mo',
+    nextPayment: 'March 20',
+    status: 'red',
+  },
+];

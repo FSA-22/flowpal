@@ -1,9 +1,14 @@
-import React from 'react'
+import BudgetSection from '@/components/BudgetBreakdown';
+import ExpensesHero from '@/components/ExpensesHero';
+import React from 'react';
 
 const Expenses = () => {
   return (
-    <div className='text-4xl'>Expenses</div>
-  )
-}
+    <main className="w-full">
+      <ExpensesHero />
+      <BudgetSection />
+    </main>
+  );
+};
 
 export default Expenses;

@@ -89,7 +89,7 @@ const AboutSection = () => {
                 className="object-fit object-cover z-10 rounded-full"
               />
             </div>
-            <div className="absolute z-0 top-0 -right-3 h-[99%] w-[74%] -rotate-19 border-1 border-[#bb48e8] rounded-full" />
+            <div className="absolute z-0 top-0 -right-3 h-[360px] w-[383px] -rotate-30 border-1 border-[#bb48e8] rounded-full" />
           </div>
         </div>
       </div>
