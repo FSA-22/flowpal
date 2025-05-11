@@ -12,7 +12,7 @@ export default function IncomeExpenseChart() {
   const [income, setIncome] = useState<number>(0);
   const [expenses, setExpenses] = useState<number>(0);
 
-  const total = income + expenses;
+  // const total = income + expenses;
 
   const chartData = {
     labels: ['Income', 'Expenses'],

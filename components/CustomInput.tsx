@@ -20,8 +20,6 @@ interface CustomInput {
   placeholder: string;
 }
 
-const formSchema = authFormSchema('register');
-
 const CustomInput = ({ control, name, label, placeholder }: CustomInput) => {
   return (
     <>

@@ -17,7 +17,7 @@ function FileInput({ setLogo }: { setLogo: (file: File | null) => void }) {
       <button
         type="button"
         onClick={handleClick}
-        className="ml-4 hover:text-purple-600 transition-colors"
+        className="ml-4 transition-colors"
       ></button>
       <input
         ref={fileInputRef}
