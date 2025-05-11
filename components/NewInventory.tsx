@@ -28,10 +28,10 @@ const FindTrackRestock = () => {
 
     const now = new Date();
     const date = now.toISOString().split('T')[0];
-    const time = now.toLocaleTimeString([], {
-      hour: '2-digit',
-      minute: '2-digit',
-    });
+    // const time = now.toLocaleTimeString([], {
+    //   hour: '2-digit',
+    //   minute: '2-digit',
+    // });
 
     const newItem: RestockItem = {
       product: form.product,

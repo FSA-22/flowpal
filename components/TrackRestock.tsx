@@ -1,5 +1,5 @@
 import React from 'react';
-import FindTrackRestock from './NewInventry';
+import FindTrackRestock from './NewInventory';
 
 const TrackRestock = () => {
   return (

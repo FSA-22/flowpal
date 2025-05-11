@@ -2,7 +2,7 @@
 import React from 'react';
 import { transactions } from '@/constants';
 
-export default function () {
+ const TransactionTable = () => {
   return (
     <div className="overflow-x-auto">
       <table className="w-full border-collapse">
@@ -32,3 +32,5 @@ export default function () {
     </div>
   );
 }
+
+export default TransactionTable;
