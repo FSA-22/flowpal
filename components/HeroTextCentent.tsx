@@ -26,7 +26,7 @@ const HeroTextCentent: React.FC<HeroTextCententProp> = ({
       </div>
 
       <Link href="/register" className="mt-4">
-        <Button className="bg-[#8848e8] hover:bg-complimentary">
+        <Button className="bg-[#8848e8] hover:bg-[#cfadff]">
           {buttonText}
         </Button>
       </Link>

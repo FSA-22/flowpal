@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import React from "react";
-import { Button } from "./ui/button";
-import { navLinks } from "@/constants";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import Image from 'next/image';
+import React from 'react';
+import { Button } from './ui/button';
+import { navLinks } from '@/constants';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const NavBar = () => {
   const pathName = usePathname();
@@ -24,8 +24,9 @@ const NavBar = () => {
                 <Link
                   href={route}
                   className={`${
-                    isActive ? "text-[#8848e8] font-semibold" : "text-gray-700"
-                  } hover:text-[#8848e8] transition `}>
+                    isActive ? 'text-[#8848e8] font-semibold' : 'text-gray-700'
+                  } hover:text-[#8848e8] transition `}
+                >
                   {label}
                 </Link>
               </li>
@@ -33,10 +34,11 @@ const NavBar = () => {
           })}
         </ul>
 
-        <div>
-          <Button className="bg-[#8848e8] hover:bg-complimentary">Get Started</Button>
-        </div>
-
+        <Link href={'/register'}>
+          <Button className="bg-[#8848e8] hover:bg-complimentary">
+            Get Started
+          </Button>
+        </Link>
       </nav>
     </header>
   );

@@ -8,7 +8,7 @@ import { Chart as ChartJS, ArcElement, Tooltip } from 'chart.js';
 
 ChartJS.register(ArcElement, Tooltip);
 
-export default function IncomeExpenseChart() {
+const IncomeExpenseChart = () => {
   const [income, setIncome] = useState<number>(0);
   const [expenses, setExpenses] = useState<number>(0);
 
@@ -83,4 +83,6 @@ export default function IncomeExpenseChart() {
       </Card>
     </section>
   );
-}
+};
+
+export default IncomeExpenseChart;
