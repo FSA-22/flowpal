@@ -1,0 +1,4 @@
+primary-color: #8848E8
+secondary-color: #F1D3FF
+complimentary-color: 891B1E
+font: excon variable
