@@ -21,9 +21,9 @@ const CustomService: React.FC<CustomServiceProp> = ({
   description,
 }) => {
   return (
-    <div className="flex flex-col justify-between bg-[#bb48e8] text-white rounded-[4px] h-[320px] md:h-[260px] w-full max-w-[280px] p-6 md:p-4">
-      <div className="flex flex-col gap-4 flex-grow">
-        <div className="flex items-center justify-center bg-white w-10 h-10 p-2 rounded">
+    <div className="flex flex-col flex-start flex-1 justify-between rounded-[4px] md:px-4 md:py-8 gap-6 bg-[#bb48e8] space-y-3 ">
+      <div className="flex flex-col gap-6">
+        <div className="flex items-center justify-center rounded-[2px] bg-white w-8 h-8 p-2">
           <Image
             src={iconPath}
             height={40}

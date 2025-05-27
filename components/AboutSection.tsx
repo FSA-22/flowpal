@@ -6,7 +6,6 @@ import { Check } from 'lucide-react';
 const AboutSection = () => {
   return (
     <section id="about" className="w-full bg-white flex flex-col gap-16">
-      {/* First Row */}
       <div className="flex max-sm:flex-col max-w-7xl mx-auto md:px-25 md:mt-20 md:flex-row items-center justify-between gap-20 w-full">
         <div className="relative w-full md:w-[350px] h-[355px] flex justify-center">
           <Image
@@ -52,7 +51,6 @@ const AboutSection = () => {
         </div>
       </div>
 
-      {/* Why Choose Us */}
       <div className="w-full bg-[#e6a7ff9a] py-16 px-6 md:py-20 md:px-20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between gap-12 relative z-10">
           <div className="w-full md:w-1/2 flex flex-col gap-6 text-left">
