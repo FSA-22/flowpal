@@ -41,7 +41,7 @@ const TransactionHistory = () => {
   });
 
   return (
-    <section className="w-screen h-screen bg-white flex flex-col p-10 gap-4">
+    <section className="w-screen mb-5 h-screen bg-white flex flex-col p-10 gap-4">
       <div className="flex flex-col max-sm:mx-auto w-1/2 gap-4">
         <h2 className="font-medium text-lg">Recent Transactions</h2>
         <div className="flex items-center center gap-2">
