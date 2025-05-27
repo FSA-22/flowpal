@@ -97,13 +97,13 @@ export default function PaymentExpensesTracker() {
             </div>
           </div>
         ))}
-        <div className="text-right mt-4">
-          <span className="text-sm text-gray-400 cursor-pointer hover:underline">
+        <div className="max-sm:flex-center text-right mt-4">
+          <span className="text-sm text-gray-400 max-sm:mx-auto cursor-pointer hover:underline">
             View All
           </span>
         </div>
       </div>
-      {/* Form for new subscription */}
+
       {showForm && (
         <div className="space-y-2 border p-4 rounded-md w-full">
           <Input
@@ -137,15 +137,15 @@ export default function PaymentExpensesTracker() {
         </div>
       )}
 
-      <div className="flex justify-between max-w-5xl mb-6 mx-auto">
+      <div className="flex md:justify-between max-sm:justify-center max-w-5xl max-sm:w-full max-sm:gap-1  mb-6 mx-auto">
         <Button
-          className="w-sm bg-purple-500 py-5 text-gray-200 font-normal hover:bg-purple-400"
+          className="w-sm max-sm:w-1/2 bg-purple-500 py-5 text-gray-200 font-normal hover:bg-purple-400"
           onClick={() => setShowForm(!showForm)}
         >
           Add Subscription
         </Button>
         <Button
-          className="w-sm py-5 text-gray-200 font-normal bg-purple-500 hover:bg-purple-400"
+          className="w-sm max-sm:w-1/2  py-5 text-gray-200 font-normal bg-purple-500 hover:bg-purple-400"
           variant="destructive"
         >
           Cancel Plan

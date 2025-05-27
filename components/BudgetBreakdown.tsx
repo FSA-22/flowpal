@@ -9,6 +9,15 @@ import PaymentExpensesTracker from './ExpensesTracker';
 ChartJS.register(ArcElement, Tooltip);
 
 export default function BudgetSection() {
+  const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+  };
+
   const budgetData = [
     { name: 'Inventory', percent: 40 },
     { name: 'Marketing', percent: 25 },
@@ -46,7 +55,6 @@ export default function BudgetSection() {
           </p>
         </div>
 
-        {/* Bottom Block */}
         <div className="w-full flex flex-col items-center mt-10 px-4">
           <div className="flex flex-col md:flex-row justify-between items-start gap-10 max-w-6xl w-full">
             {/* Left Side - Budget Items */}
@@ -90,8 +98,8 @@ export default function BudgetSection() {
               )}
             </div>
 
-            <div className=" flex-center w-1/2 max-w-[390px]">
-              <Pie data={chartData} />
+            <div className="flex-center  w-1/2 max-sm:w-full max-sm:h-full md:max-w-[390px]">
+              <Pie data={chartData} options={options} />
             </div>
           </div>
         </div>
@@ -100,7 +108,7 @@ export default function BudgetSection() {
       <div className="w-full mx-auto mt-20 text-gray-400">
         <PaymentExpensesTracker />
       </div>
-      <div className="relative flex-center bg-[#e8acff] rounded w-xl h-35 my-15">
+      <div className="relative flex-center bg-[#e8acff] rounded w-xl max-sm:w-sm h-35 my-15">
         <div className="absolute -top-4 p-2 mx- rounded bg-[#e8acff] ">
           <p className=" bg-white text-gray-600 font-normal px-2 rounded-[2px]">
             Cost Saving Tips

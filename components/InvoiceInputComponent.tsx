@@ -34,7 +34,7 @@ export default function InvoiceInputComponent() {
   };
 
   const handleSendEmail = () => {
-    alert('Email functionality not implemented yet.');
+    alert('Email functionality not implemented.');
   };
 
   return (

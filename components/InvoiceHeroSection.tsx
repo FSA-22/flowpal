@@ -4,14 +4,14 @@ import Image from 'next/image';
 
 const InvoiceHeroSection = () => {
   return (
-    <section className="relative flex items-center justify-between  px-20 bg-gradient-to-b from-purple-500 to-white min-h-screen">
+    <section className="relative flex items-center gap-4 justify-between max-sm:justify-center px-20 bg-gradient-to-b from-purple-500 to-white min-h-screen">
       <HeroTextCentent
         buttonText="Create A New Receipt"
         title="Generate & Manage Receipt In Seconds"
         detail="Create professional ddigital receipts effortlessly. Track and share transaction recordsn-no paperwork required"
       />
 
-      <div className="relative w-full md:w-1/2 flex justify-end">
+      <div className="relative w-full md:w-1/2 max-md:hidden flex justify-end">
         <div className="relative w-64 h-64 md:w-90 md:h-90 rounded-full overflow-hidden shadow-lg">
           <Image
             src="/hero4.jpg"
