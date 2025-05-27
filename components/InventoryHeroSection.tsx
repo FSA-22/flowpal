@@ -11,7 +11,7 @@ const InventoryHeroSection = () => {
         detail="FLowpal helps you monitor stock levels, track product availability and receive stock alert"
       />
 
-      <div className="relative w-6xl md:w-1/2 flex justify-end">
+      <div className="relative w-6xl col max-sm:hidden md:w-1/2 flex justify-end">
         <div className="relative w-64 h-64 md:w-90 md:h-90 rounded-full overflow-hidden shadow-lg">
           <Image
             src="/hero3.jpg"

@@ -11,19 +11,19 @@ type StockCardProps = {
 
 const StockCard = ({ path, title, title2, counts }: StockCardProps) => {
   return (
-    <div className="flex items-center flex-col gap-6 bg-purple-600 w-50 h-65 p-4 text-white rounded-b-full">
+    <div className="flex flex-col items-center justify-center gap-4 bg-purple-600 text-white rounded-b-full p-6 w-full min-h-[270px] max-w-[220px] mx-auto shadow-md">
       <Image
         alt="Stock-Icon"
         src={path}
-        height={30}
-        width={36}
-        className="mt-4 mb-2 p-1 bg-white rounded-tl-lg"
+        height={40}
+        width={40}
+        className="p-2 bg-white rounded-tl-lg"
       />
-      <div>
-        <p className="text-center">{title}</p>
-        <p className="text-center">{title2}</p>
+      <div className="text-center space-y-1">
+        <p className="text-sm font-medium">{title}</p>
+        <p className="text-sm">{title2}</p>
       </div>
-      <p className="text-gray-200">{counts}</p>
+      <p className="text-lg font-semibold text-gray-200">{counts}</p>
     </div>
   );
 };

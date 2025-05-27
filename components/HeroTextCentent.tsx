@@ -15,7 +15,7 @@ const HeroTextCentent: React.FC<HeroTextCententProp> = ({
   buttonText,
 }) => {
   return (
-    <div className="max-w-lg max-h-7xl  max-sm:mx-auto max-sm:min-w-100 h-[400px] px-10 rounded-sm py-10 bg-white/20 backdrop-blur-sm flex flex-col space-y-1">
+    <div className="max-w-lg max-h-7xl  max-sm:mx-auto max-sm:min-w-99 h-[400px] px-10 rounded-sm py-10 bg-white/20 backdrop-blur-sm flex flex-col space-y-1">
       <div className="flex flex-1 flex-col justify-start gap-10">
         <div>
           <div className="w-[6rem] h-1 bg-[#bb48e8]" />

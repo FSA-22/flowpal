@@ -6,7 +6,7 @@ export default function InventoryNotifications() {
   const [agingAlertEnabled, setAgingAlertEnabled] = useState(true);
 
   return (
-    <div className="flex flex-col gap-4 my-10">
+    <div className="flex flex-col gap-4 my-10 max-sm:items-center max-sm:p-4">
       <div className="max-w-5xl p-3 flex justify-between items-center mx-auto rounded w-full bg-[#f1d3ff]">
         <p className="font-medium">Inventory Notification</p>
         <span className="text-xl">
