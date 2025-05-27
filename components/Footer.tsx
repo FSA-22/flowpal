@@ -6,7 +6,6 @@ export default function Footer() {
   return (
     <footer className="bg-[#bb48e8] text-gray-200">
       <div className="flex flex-col md:flex-row justify-between gap-10 max-w-6xl mx-auto px-4 py-10">
-        x{' '}
         <div>
           <div className="flex items-center mb-4">
             <Image
