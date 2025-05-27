@@ -42,9 +42,9 @@ const TransactionHistory = () => {
 
   return (
     <section className="w-screen h-screen bg-white flex flex-col p-10 gap-4">
-      <div className="flex flex-col w-1/2 gap-4">
+      <div className="flex flex-col max-sm:mx-auto w-1/2 gap-4">
         <h2 className="font-medium text-lg">Recent Transactions</h2>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center center gap-2">
           <input
             type="search"
             placeholder="Search"
@@ -55,11 +55,11 @@ const TransactionHistory = () => {
           </div>
         </div>
       </div>
-      <div className="flex max-w-6xl gap-10">
+      <div className="flex max-w-6xl max-sm:w-full max-sm:flex-col gap-10">
         <div className="flex-1/2 shadow">
           <TransactionTable />
         </div>
-        <div className="flex flex-col w-1/3 items-center justify-between gap-4">
+        <div className="flex flex-col w-1/3 max-sm:w-full items-center justify-between gap-4">
           <div className=" flex flex-col text-center">
             <Form {...form}>
               <form

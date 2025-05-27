@@ -9,8 +9,8 @@ import { Chart as ChartJS, ArcElement, Tooltip } from 'chart.js';
 ChartJS.register(ArcElement, Tooltip);
 
 const IncomeExpenseChart = () => {
-  const [income, setIncome] = useState<number>(0);
-  const [expenses, setExpenses] = useState<number>(0);
+  const [income, setIncome] = useState<number>(1);
+  const [expenses, setExpenses] = useState<number>(1);
 
   // const total = income + expenses;
 
@@ -26,7 +26,7 @@ const IncomeExpenseChart = () => {
   };
 
   return (
-    <section className="relative w-full flex justify-between gap-20 mx-auto p-6 space-y-6 rounded-b-lg bg-[#b416e4]">
+    <section className="relative w-full flex justify-between gap-20 mx-auto max-md:flex-col max-md:items-center p-6 space-y-6 rounded-b-lg bg-[#b416e4]">
       <div className="flex flex-col gap-8 items-center">
         <h2 className="text-2xl font-bold">
           Comapre Sales & Expenses <br /> At A Glance
