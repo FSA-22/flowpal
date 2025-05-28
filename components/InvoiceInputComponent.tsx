@@ -110,34 +110,33 @@ export default function InvoiceInputComponent() {
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-4 justify-between">
+        <div className="flex flex-wrap max-sm:flex-nowrap max-sm:items-center max-sm:gap-2 justify-between">
           <Button
-            className="bg-purple-600 text-white w-[18%] py-6 font-normal"
+            className="bg-purple-600 text-white w-[18%] max-sm:w-fit max-sm:px-2 py-6 font-normal"
             onClick={() => alert('Preview not implemented')}
           >
             Receipt Preview
           </Button>
           <Button
-            className="bg-purple-600 text-white w-[18%] py-6 font-normal"
+            className="bg-purple-600 max-sm:w-fit text-white w-[18%] max-sm:px-2 py-6 font-normal"
             onClick={handleDownloadPDF}
           >
             Download PDF
           </Button>
           <Button
-            className="bg-purple-600 text-white w-[18%] py-6 font-normal"
+            className="bg-purple-600 max-sm:w-fit text-white w-[18%] max-sm:px-2 py-6 font-normal"
             onClick={handleSendEmail}
           >
             Send Via Email
           </Button>
           <Button
-            className="bg-purple-600 text-white w-[18%] py-6 font-normal"
+            className="bg-purple-600 max-sm:w-fit text-white w-[18%] py-6 max-sm:px-2 font-normal"
             onClick={handlePrint}
           >
             Print Receipt
           </Button>
         </div>
 
-        {/* Hidden receipt content for PDF/Print */}
         <div ref={receiptRef} className="hidden">
           <div>
             <h2>Receipt</h2>

@@ -50,18 +50,18 @@ export default function ReceiptSection() {
       className="bg-[#f1d3ff] w-full mx-auto py-8 rounded-b-2xl space-y-6"
       ref={() => exportRef}
     >
-      <div className="max-w-6xl mx-auto mt-4 space-y-6 rounded-b-3xl">
-        <div className="flex flex-col items-center space-y-2">
-          <h1 className="text-3xl font-bold">
+      <div className="max-w-6xl mx-auto max-sm:w-md mt-4 space-y-6 rounded-b-3xl">
+        <div className="flex flex-col max-sm:w-sm items-center space-y-2">
+          <h1 className="text-3xl max-sm:text-xl font-bold">
             Find Any Receipt in Just a Few Clicks
           </h1>
-          <p className="text-gray-700">
+          <p className="text-gray-700 max-sm:text-[12px] max-sm:text-center">
             Easily access your past receipts, filter by date or status, and
             download or resend with ease.
           </p>
         </div>
 
-        <div className="flex max-w-xl mx-auto justify-between items-center">
+        <div className="flex max-w-xl max-sm:w-sm mx-auto justify-between items-center">
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 bg-red-500" />
             <span>Paid</span>
